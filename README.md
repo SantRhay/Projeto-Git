@@ -59,4 +59,11 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
 
 14. Repositório Remoto do GitHub
     git remote add origin https://github.com/SantRhay/Projeto-Git
-    
+
+15. Resolvendo confitos de merge
+    git merge nova-branch
+    ## conflito detectado
+    ## resolução manual no VS Code (Accept both Changes)
+    git add .
+    git commit -m "Resolvendo conflito de merge"
+    git push
