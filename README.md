@@ -51,3 +51,9 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
 11. Verificando o status
     git status
 
+12. Verifcando Histórico
+    git log 
+
+13. Adicionei uma nova Branch
+    git checkout -b nova-branch
+
