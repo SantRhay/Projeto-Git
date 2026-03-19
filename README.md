@@ -7,7 +7,7 @@ Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicaç�
 # Ferramentas utilizadas
  - Linux
  - Git
-
+ - GitHub
 # Comando Utilizados
 
 Utilizei cada um dos comandos abaixo para iniciar esse projeto.
@@ -57,3 +57,6 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
 13. Adicionei uma nova Branch
     git checkout -b nova-branch
 
+14. Repositório Remoto do GitHub
+    git remote add origin https://github.com/SantRhay/Projeto-Git
+    
