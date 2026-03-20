@@ -1,66 +1,57 @@
-# Meu projeto
+# Projeto Git - Controle de Versionamento
 Este é meu primeiro projeto usando Git e GitHub!
 
 # Sobre o Projeto
-Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicação!
+Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicação, com inclusão de fluxo de branches, resoluções de conclitos, merge e rebase!
 
 # Ferramentas utilizadas
- - Linux
- - Git
- - GitHub
-# Comando Utilizados
+  - Linux
+  - Git
+  - GitHub
 
-Utilizei cada um dos comandos abaixo para iniciar esse projeto.
+# Comando Aplicados
+  - Instalação do Git
+  - Inicialização de repositório
+  - Controle de versão com Git
+  - Criação e gerenciamento de Branches (feature, fix)
+  - Merge e resolição de conflitos
+  - Rebase
+  - Commits 
+  - Uso do GitHub (push, pull request)
 
-1. Atualização de lista pacotes
-   sudo apt update
+# Fluxo inicial do projeto
 
-2. Instalação do Git
-   sudo apt install git
+```bash
+    git init
 
-3. Verificar instação
-   git --version
+    Criando um arquivo
+    touch README.md
 
-4. Configurando o usuário
-   git config --global user.name "Rayane Santana"
-   git config --global user.email "rayane.santana_@hotmail.com"
+    Editando o arquivo
+    vim README.md
 
-5. Criando o repositório
+    Adicionando o conteúdo pelo editor
+    ##Meu primeiro projeto...
 
-   mkdir meu-repo
-
-6. Iniciando o git
-   criando o repotório local
-   git init
-
-7. Criando um arquivo
-   touch README.md
-
-6. Editando o arquivo
-   vim README.md
-
-7. Adicionando o conteúdo pelo editor
-   ##Meu primeiro projeto...
-
-8. Adicionando o arquivo
-   git add README.md
+    Adicionando o arquivo
+    git add README.md
    
-10. Adicionando o primeiro commit
+    Adicionando o primeiro commit
     git commit -m "Primeiro commit"
 
-11. Verificando o status
+    Verificando o status
     git status
 
-12. Verifcando Histórico
+    Verifcando Histórico
     git log 
 
-13. Adicionei uma nova Branch
+    Adicionei uma nova Branch
     git checkout -b nova-branch
 
-14. Repositório Remoto do GitHub
+    Repositório Remoto do GitHub
     git remote add origin https://github.com/SantRhay/Projeto-Git
 
-15. Resolvendo confitos de merge
+    Resolvendo confitos de merge
     git merge nova-branch
     ## conflito detectado
     ## resolução manual no VS Code (Accept both Changes)
@@ -68,12 +59,12 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
     git commit -m "Resolvendo conflito de merge"
     git push
 
-16. Teste de reset
+    Teste de reset
     ##teste de linha
     #Cancelando antes do commit
     git restore README.md
    
-17. Test de reset
+    Test de reset
     ## Outra linha de teste
     ## Criando commit -m "teste reset"
     git add .
@@ -81,20 +72,49 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
     ## Voltando o commit
     git reset --hard HEAD~1
 
-# Criando Gitignore
-  touch .gitignore
-  ## Adicionei o conteúdo (base padrão)
-  git add .gitignore
-  git commit -m "Adicionando .gitignore"
-  git push
+    # Criando Gitignore
+    touch .gitignore
+     ## Adicionei o conteúdo (base padrão)
+    git add .gitignore
+    git commit -m "Adicionando .gitignore"
+    git push
 
 # Criando uma nova branch
   git checkout -b feature/login
-  
+  git checkout -b fix/README
+  git add README.md
+  git commit -m "Adicionando login"
+  git push
+
 # Correção de Bug
   criando uma nova branch
   git checkout -b fix/README
+<<<<<<< HEAD
 
   Linha Criada na Main = teste-conflito
   git add .
   git coomit -m "Feat alteração na main"
+=======
+  git add README.md
+  git commit -m "corrigindo erro no README"
+  git push
+
+# Simulação de conflito em merge
+  criando a branch
+  git checkout -b conflito-teste
+  git add README.md
+  git commit -m "alteração na branch conflito-teste"
+  git push
+
+   Correção do conflito de merge
+   git commit -m "feat: corrigindo o conflito de merge"
+   git merge conflito-teste
+   git push
+
+#  Criando um Rebase básico
+   criando a branch
+   git checkout -b feature/rebase-teste
+   git add README.md
+   git commit -m "feat: teste rebase 1"
+   git push
+
