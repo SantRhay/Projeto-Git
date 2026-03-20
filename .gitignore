@@ -1,0 +1,19 @@
+# NODE
+node_modules/
+
+# LOGS
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Arquivos de ambiente
+.env
+
+# Build
+dist/
+build/

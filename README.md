@@ -80,3 +80,10 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
     git commit -m "Teste de reset"
     ## Voltando o commit
     git reset --hard HEAD~1
+
+# Criando Gitignore
+  touch .gitignore
+  ## Adicionei o conteúdo (base padrão)
+  git add .gitignore
+  git commit -m "Adicionando .gitignore"
+  git push
