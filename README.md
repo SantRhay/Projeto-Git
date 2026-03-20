@@ -87,3 +87,7 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
   git add .gitignore
   git commit -m "Adicionando .gitignore"
   git push
+
+# Criando uma nova branch
+  git checkout -b feature/login
+  
