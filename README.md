@@ -91,3 +91,10 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
 # Criando uma nova branch
   git checkout -b feature/login
   
+# Correção de Bug
+  criando uma nova branch
+  git checkout -b fix/README
+
+  Linha Criada na Main = teste-conflito
+  git add .
+  git coomit -m "Feat alteração na main"
