@@ -70,8 +70,13 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
 
 16. Teste de reset
     ##teste de linha
+    #Cancelando antes do commit
     git restore README.md
    
-
 17. Test de reset
-    Outra linha de teste
+    ## Outra linha de teste
+    ## Criando commit -m "teste reset"
+    git add .
+    git commit -m "Teste de reset"
+    ## Voltando o commit
+    git reset --hard HEAD~1
