@@ -90,20 +90,15 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
 
 # Criando uma nova branch
   git checkout -b feature/login
-  git checkout -b fix/README
-  git add README.md
-  git commit -m "Adicionando login"
+  
+  git add .
+  git commit -m "feat: adicionando login"
   git push
 
 # Correção de Bug
-  criando uma nova branch
+  criando uma nova branch  
   git checkout -b fix/README
-<<<<<<< HEAD
-
-  Linha Criada na Main = teste-conflito
-  git add .
-  git coomit -m "Feat alteração na main"
-=======
+  
   git add README.md
   git commit -m "corrigindo erro no README"
   git push
@@ -115,7 +110,15 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
   git commit -m "alteração na branch conflito-teste"
   git push
 
-  voltando para main
-  git checkout main
-  ## Linha de teste
->>>>>>> conflito-teste
+   Correção do conflito de merge
+   git commit -m "feat: corrigindo o conflito de merge"
+   git merge conflito-teste
+   git push
+
+#  Criando um Rebase básico
+   criando a branch
+   git checkout -b feature/rebase-teste
+   git add README.md
+   git commit -m "feat: teste rebase 1"
+   git push
+
