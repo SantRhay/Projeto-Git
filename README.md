@@ -2,56 +2,65 @@
 Este é meu primeiro projeto usando Git e GitHub!
 
 # Sobre o Projeto
-Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicação, com inclusão de fluxo de branches, resoluções de conclitos, merge e rebase!
+Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicação!
 
 # Ferramentas utilizadas
-  - Linux
-  - Git
-  - GitHub
+ - Linux
+ - Git
+ - GitHub
+# Comando Utilizados
 
-# Comando Aplicados
-  - Instalação do Git
-  - Inicialização de repositório
-  - Controle de versão com Git
-  - Criação e gerenciamento de Branches (feature, fix)
-  - Merge e resolição de conflitos
-  - Rebase
-  - Commits 
-  - Uso do GitHub (push, pull request)
+Utilizei cada um dos comandos abaixo para iniciar esse projeto.
 
-# Fluxo inicial do projeto
+1. Atualização de lista pacotes
+   sudo apt update
 
-```bash
-    git init
+2. Instalação do Git
+   sudo apt install git
 
-    Criando um arquivo
-    touch README.md
+3. Verificar instação
+   git --version
 
-    Editando o arquivo
-    vim README.md
+4. Configurando o usuário
+   git config --global user.name "Rayane Santana"
+   git config --global user.email "rayane.santana_@hotmail.com"
 
-    Adicionando o conteúdo pelo editor
-    ##Meu primeiro projeto...
+5. Criando o repositório
 
-    Adicionando o arquivo
-    git add README.md
+   mkdir meu-repo
+
+6. Iniciando o git
+   criando o repotório local
+   git init
+
+7. Criando um arquivo
+   touch README.md
+
+6. Editando o arquivo
+   vim README.md
+
+7. Adicionando o conteúdo pelo editor
+   ##Meu primeiro projeto...
+
+8. Adicionando o arquivo
+   git add README.md
    
-    Adicionando o primeiro commit
+10. Adicionando o primeiro commit
     git commit -m "Primeiro commit"
 
-    Verificando o status
+11. Verificando o status
     git status
 
-    Verifcando Histórico
+12. Verifcando Histórico
     git log 
 
-    Adicionei uma nova Branch
+13. Adicionei uma nova Branch
     git checkout -b nova-branch
 
-    Repositório Remoto do GitHub
+14. Repositório Remoto do GitHub
     git remote add origin https://github.com/SantRhay/Projeto-Git
 
-    Resolvendo confitos de merge
+15. Resolvendo confitos de merge
     git merge nova-branch
     ## conflito detectado
     ## resolução manual no VS Code (Accept both Changes)
@@ -59,12 +68,12 @@ Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicaç�
     git commit -m "Resolvendo conflito de merge"
     git push
 
-    Teste de reset
+16. Teste de reset
     ##teste de linha
     #Cancelando antes do commit
     git restore README.md
    
-    Test de reset
+17. Test de reset
     ## Outra linha de teste
     ## Criando commit -m "teste reset"
     git add .
@@ -72,29 +81,24 @@ Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicaç�
     ## Voltando o commit
     git reset --hard HEAD~1
 
-    # Criando Gitignore
-    touch .gitignore
-     ## Adicionei o conteúdo (base padrão)
-    git add .gitignore
-    git commit -m "Adicionando .gitignore"
-    git push
+# Criando Gitignore
+  touch .gitignore
+  ## Adicionei o conteúdo (base padrão)
+  git add .gitignore
+  git commit -m "Adicionando .gitignore"
+  git push
 
 # Criando uma nova branch
   git checkout -b feature/login
-  git checkout -b fix/README
-  git add README.md
-  git commit -m "Adicionando login"
+  
+  git add .
+  git commit -m "feat: adicionando login"
   git push
 
 # Correção de Bug
-  criando uma nova branch
+  criando uma nova branch  
   git checkout -b fix/README
-<<<<<<< HEAD
-
-  Linha Criada na Main = teste-conflito
-  git add .
-  git coomit -m "Feat alteração na main"
-=======
+  
   git add README.md
   git commit -m "corrigindo erro no README"
   git push
@@ -114,6 +118,7 @@ Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicaç�
 #  Criando um Rebase básico
    criando a branch
    git checkout -b feature/rebase-teste
+   ## linha de teste 1
    git add README.md
    git commit -m "feat: teste rebase 1"
    git push
