@@ -94,3 +94,7 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
 # Correção de Bug
   criando uma nova branch
   git checkout -b fix/README
+
+# Simulação de conflito em merge
+ criando a branch
+ git checkout -b conflito-teste
