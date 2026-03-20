@@ -67,3 +67,11 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
     git add .
     git commit -m "Resolvendo conflito de merge"
     git push
+
+16. Teste de reset
+    ##teste de linha
+    git restore README.md
+   
+
+17. Test de reset
+    Outra linha de teste
