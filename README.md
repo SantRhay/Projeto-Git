@@ -11,7 +11,7 @@ Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicaç�
 # Comando Utilizados
 
 Utilizei cada um dos comandos abaixo para iniciar esse projeto.
-
+```bash
 1. Atualização de lista pacotes
    sudo apt update
 
@@ -122,4 +122,5 @@ Utilizei cada um dos comandos abaixo para iniciar esse projeto.
    git add README.md
    git commit -m "feat: teste rebase 1"
    git push
+```
 
