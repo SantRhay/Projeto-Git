@@ -17,6 +17,7 @@
 - [📌 Sobre o projeto](#-sobre-o-projeto)
 - [🛠️ Ferramentas](#️-ferramentas-utilizadas)
 - [⚙️ Comandos](#️-comandos-utilizados)
+- [🔄 Pipeline CI/CD](#-pipeline-cicd)
 - [💡 Prática](#-o-que-foi-praticado)
 - [📚 Aprendizados](#-aprendizados)
 - [📌 Conclusão](#-conclusão)
@@ -36,6 +37,7 @@ Foram abordadas práticas como criação de branches,  resolução de conflitos,
 - 🐧 Linux (ambiente de desenvolvimento)
 - 🌿 Git (controle de versão)
 - 💻 GitHub (repositório remoto)
+- ⚙️ GitHub Actions (CI/CD)
 
 ---
 
@@ -204,13 +206,36 @@ git checkout -b feature/rebase-teste
 
 ```md
 
-# 💡 O que foi praticado:
+---
+
+## 🔄 Pipeline CI/CD
+
+Este projeto utiliza GitHub Actions para automação de integração contínua.
+
+### ✔️ O pipeline executa:
+
+- Validação automática do projeto
+- Simulação de testes
+- Verificação de arquivos essenciais
+- Execução a cada push na branch main
+
+📌 Resultado:
+- Feedback imediato
+- Garantia de qualidade
+- Simulação de ambiente DevOps real
+
+### 📸 Execução do Pipeline
+![Pipeline](./assets/pipeline.png)
+
+---
+
+# 💡 Práticas Aplicadas:
 - 🌿 Criação de branches
 - ⚠️ Resolução de conflitos
 - 🔄 Versionamento de código
 - ♻️ Teste com reset e rebase
  
-## 🧠 Aprendizados
+## 🧠 Aprendizados Técnicos
 
 - Uso de branches para isolar funcionalidades
 - Resolução de conflitos de merde na prática
@@ -224,9 +249,16 @@ git checkout -b feature/rebase-teste
 
 Este projeto foi essencial para consolidar meus conhecimentos em Git e controle de versionamento, permitindo aplicar na prática conceitos como criação de branches, resolução de conflitos e gerenciamento de histórico;
 
-Criei experiencia simulando cenários reais de desenvolvimento,reforçando boas práticas utilizadas no marcado.
+Simulei cenários reais de desenvolvimento, aplicando práticas utilizadas no mercado e fortalecendo minha base em versionamento e CI/CD
 
 ---
+
+## 📊 Resultados
+
+- Pipeline CI/CD funcional com GitHub Actions
+- Automatização de validações a cada push
+- Simulação de fluxo real de desenvoltimento
+- Aplicação de boas práticas de versionamento
 
 ## 👤 Autora
 
