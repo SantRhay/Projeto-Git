@@ -9,6 +9,7 @@
 ![Git](https://img.shields.io/badge/Git-Controle_de_Versão-orange)
 ![Status](https://img.shields.io/badge/status-concluído-brightgreen)
 ![Linux](https://img.shields.io/badge/Linux-terminal-blue)
+![CI](https://github.com/SantRhay/Projeto-Git/actions/workflows/ci.yml/badge.svg)
 
 
 ## 📌 Navegação
