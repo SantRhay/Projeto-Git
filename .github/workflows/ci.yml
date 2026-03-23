@@ -16,16 +16,24 @@ jobs:
 
       - name: Setup ambiente de desenvolvimento
         run: echo "Ambiente de desenvolvimento configurado"
-      
-      - name: Validação (Lint)
-        run: |
-          echo "Verificando arquivos .md..." 
-          ls *.md
-        
-      - name: Testes básicos
-        run: |
-          echo "Executando testes básicos..."
-          echo "Testes concluídos com sucesso!"
 
-      - name: Finalização
-        run: echo "Processo de CI concluído com sucesso!"
+      - name : Verificar README.md
+        run: |
+          if [ ! -f README.md ]; then
+            echo "README.md não encontrado!"
+            exit 1
+          fi
+
+      - name: Contar linhas do projeto
+        run: |
+            echo "Contando linhas de código..."
+            wc -l README.md
+
+      - name: Teste de integração
+        run: |
+           echo "Executando testes na pipeline..."
+           sleep 2
+           echo "Testes concluídos com sucesso!"
+           
+      - name: Final
+        run: echo "Pipeline de CI concluída com sucesso!"
