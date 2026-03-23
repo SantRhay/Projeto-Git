@@ -19,13 +19,13 @@ jobs:
       
       - name: Validação (Lint)
         run: |
-        echo "Verificando arquivos .md..." 
-        ls *.md
+          echo "Verificando arquivos .md..." 
+          ls *.md
         
       - name: Testes básicos
         run: |
-        echo "Executando testes básicos..."
-        echo "Testes concluídos com sucesso!"
+          echo "Executando testes básicos..."
+          echo "Testes concluídos com sucesso!"
 
       - name: Finalização
         run: echo "Processo de CI concluído com sucesso!"
