@@ -1,126 +1,233 @@
-# Projeto Git - Controle de Versionamento
-Este é meu primeiro projeto usando Git e GitHub!
+![Last Commit](https://img.shields.io/github/last-commit/SantRhay/Projeto-Git)
+![Languages](https://img.shields.io/github/languages/count/SantRhay/Projeto-Git)
+![Repo Size](https://img.shields.io/github/repo-size/SantRhay/Projeto-Git)
 
-# Sobre o Projeto
-Aplicando meus conhecimentos de comandos Git, com comandos Básicos de aplicação!
+# 🚀 Projeto Git - Controle de Versionamento
 
-# Ferramentas utilizadas
- - Linux
- - Git
- - GitHub
-# Comando Utilizados
+> 🚀 Projeto prático focado em simular cenários reais de versionamento utilizando Git e GitHub.
 
-Utilizei cada um dos comandos abaixo para iniciar esse projeto.
+![Git](https://img.shields.io/badge/Git-Controle_de_Versão-orange)
+![Status](https://img.shields.io/badge/status-concluído-brightgreen)
+![Linux](https://img.shields.io/badge/Linux-terminal-blue)
+
+
+## 📌 Navegação
+
+- [📌 Sobre o projeto](#-sobre-o-projeto)
+- [🛠️ Ferramentas](#️-ferramentas-utilizadas)
+- [⚙️ Comandos](#️-comandos-utilizados)
+- [💡 Prática](#-o-que-foi-praticado)
+- [📚 Aprendizados](#-aprendizados)
+- [📌 Conclusão](#-conclusão)
+
+---
+
+## 📌  Sobre o Projeto
+
+Este projeto foi desenvolvido com o objetivo de aplicar conceitos fundamentais de Git e controle de versionamento, utilizando comandos essenciais e simulando situações reais do dia a dias de desenvolvimento.
+
+Foram abordadas práticas como criação de branches,  resolução de conflitos, versionamento de código e manipulação de histórico.)
+
+---
+
+## 🛠️ Ferramentas utilizadas
+ 
+- 🐧 Linux (ambiente de desenvolvimento)
+- 🌿 Git (controle de versão)
+- 💻 GitHub (repositório remoto)
+
+---
+
+## ⚙️ Comando Utilizados
+
+### 👤 Configurando o usuário  
+Definição  das credenciais globais do Git
+   
 ```bash
-1. Atualização de lista pacotes
-   sudo apt update
-
-2. Instalação do Git
-   sudo apt install git
-
-3. Verificar instação
-   git --version
-
-4. Configurando o usuário
-   git config --global user.name "Rayane Santana"
-   git config --global user.email "rayane.santana_@hotmail.com"
-
-5. Criando o repositório
-
-   mkdir meu-repo
-
-6. Iniciando o git
-   criando o repotório local
-   git init
-
-7. Criando um arquivo
-   touch README.md
-
-6. Editando o arquivo
-   vim README.md
-
-7. Adicionando o conteúdo pelo editor
-   ##Meu primeiro projeto...
-
-8. Adicionando o arquivo
-   git add README.md
-   
-10. Adicionando o primeiro commit
-    git commit -m "Primeiro commit"
-
-11. Verificando o status
-    git status
-
-12. Verifcando Histórico
-    git log 
-
-13. Adicionei uma nova Branch
-    git checkout -b nova-branch
-
-14. Repositório Remoto do GitHub
-    git remote add origin https://github.com/SantRhay/Projeto-Git
-
-15. Resolvendo confitos de merge
-    git merge nova-branch
-    ## conflito detectado
-    ## resolução manual no VS Code (Accept both Changes)
-    git add .
-    git commit -m "Resolvendo conflito de merge"
-    git push
-
-16. Teste de reset
-    ##teste de linha
-    #Cancelando antes do commit
-    git restore README.md
-   
-17. Test de reset
-    ## Outra linha de teste
-    ## Criando commit -m "teste reset"
-    git add .
-    git commit -m "Teste de reset"
-    ## Voltando o commit
-    git reset --hard HEAD~1
-
-# Criando Gitignore
-  touch .gitignore
-  ## Adicionei o conteúdo (base padrão)
-  git add .gitignore
-  git commit -m "Adicionando .gitignore"
-  git push
-
-# Criando uma nova branch
-  git checkout -b feature/login
-  
-  git add .
-  git commit -m "feat: adicionando login"
-  git push
-
-# Correção de Bug
-  criando uma nova branch  
-  git checkout -b fix/README
-  
-  git add README.md
-  git commit -m "corrigindo erro no README"
-  git push
-
-# Simulação de conflito em merge
-  criando a branch
-  git checkout -b conflito-teste
-  git add README.md
-  git commit -m "alteração na branch conflito-teste"
-  git push
-
-   Correção do conflito de merge
-   git commit -m "feat: corrigindo o conflito de merge"
-   git merge conflito-teste
-   git push
-
-#  Criando um Rebase básico
-   criando a branch
-   git checkout -b feature/rebase-teste
-   ## linha de teste 1
-   git add README.md
-   git commit -m "feat: teste rebase 1"
-   git push
+git config --global user.name "Seu Nome"
+git config --global user.email "seu-email@exemplo.com"
 ```
 
+---
+
+### 📁 Criando o repositório
+Criação de um novo repositório local
+
+```bash
+mkdir meu-repo
+git init
+```
+### 📄 Criando do arquivo README
+Criação do arquivo principal do projeto
+
+```bash 
+touch README.md
+```
+
+### ✏️ Editando o arquivo
+
+```bash
+vim README.md
+``` 
+
+### ➕ Adicionando ao stage
+![Banner DevOps](https://img.shields.io/badge/Projeto-Git%20Versionamento-blue?style=for-the-badge)
+
+```bash
+git add README.md
+```
+---
+
+```md
+### 💾 Adicionando o primeiro commit
+
+```bash
+git commit -m "feat: Inicialização do projeto Git com README estruturado"
+```
+---
+
+### 📊 Verificando o status
+
+```bash
+git status
+``` 
+---
+
+### 📜 Verifcando Histórico
+
+```bash
+git log 
+```
+
+---
+
+## 🌿 Criando uma nova Branch
+
+Criei uma nova branch para desenvolver uma feature isolada do código principal.
+
+```bash
+git checkout -b nova-branch
+```
+---
+
+# 🔗 Repositório Remoto do GitHub
+
+```bash
+git remote add origin https://github.com/SantRhay/Projeto-Git
+git branch -M main
+git push -u origin main
+``` 
+---
+
+# ⚠️ Resolvendo confitos de merge
+
+```bash
+git merge nova-branch
+```
+---
+
+# 🔄 Teste de reset
+
+```bash
+git restore README.md
+git reset --hard HEAD~1
+``` 
+---
+
+# 📦 Configurando .gitignore
+
+```bash
+touch .gitignore
+git add .gitignore
+git push -u origin main
+```
+---
+
+```md id="d2k91x"
+
+## 🚀 Comandos utilizados
+
+```
+
+### 🌿  Criando uma nova branch
+Criação de uma branch para desenvolvimento isolado
+
+```bash
+git checkout -b feature/login
+```
+
+### 🔀 Merge
+Integração de alterações entre branches
+
+```bash
+git merge nova-branch
+```
+
+### 🔄 Rebase básico
+Reorganização do histórico de commits
+
+```bash
+git checkout -b feature/rebase-teste
+git rebase main 
+```
+
+---
+
+### 🐛 Correção de Bug
+
+Criando uma nova branch:  
+
+```bash
+git checkout -b fix:README
+```
+---
+
+### ⚠️ Simulação de conflito em merge
+
+Criando a branch:
+  
+```bash
+git checkout -b conflito-teste
+```
+---
+
+### 🌿 Criando um Rebase básico
+
+Criando a branch:
+
+```bash
+git checkout -b feature/rebase-teste
+``` 
+
+---
+
+```md
+
+# 💡 O que foi praticado:
+- 🌿 Criação de branches
+- ⚠️ Resolução de conflitos
+- 🔄 Versionamento de código
+- ♻️ Teste com reset e rebase
+ 
+## 🧠 Aprendizados
+
+- Uso de branches para isolar funcionalidades
+- Resolução de conflitos de merde na prática
+- Controle de histórico com git (reset e restore)
+- Integração com repositório remoto (GitHub)
+```
+
+---
+
+## 📌 Conclusão
+
+Este projeto foi essencial para consolidar meus conhecimentos em Git e controle de versionamento, permitindo aplicar na prática conceitos como criação de branches, resolução de conflitos e gerenciamento de histórico;
+
+Criei experiencia simulando cenários reais de desenvolvimento,reforçando boas práticas utilizadas no marcado.
+
+---
+
+## 👤 Autora
+
+Feito por **Rayane Santana**
+💻 Em transição para área de tecnologia / DevOps
