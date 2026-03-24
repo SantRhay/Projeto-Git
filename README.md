@@ -12,23 +12,40 @@
 ![CI](https://github.com/SantRhay/Projeto-Git/actions/workflows/ci.yml/badge.svg)
 
 
+## 🚀  Demonstração de Pipeline
+
+![CI/CD](./assets/pipeline.png)
+
+
 ## 📌 Navegação
 
 - [📌 Sobre o projeto](#-sobre-o-projeto)
 - [🛠️ Ferramentas](#️-ferramentas-utilizadas)
 - [⚙️ Comandos](#️-comandos-utilizados)
 - [🔄 Pipeline CI/CD](#-pipeline-cicd)
-- [💡 Prática](#-o-que-foi-praticado)
+- [🧪 Prática](#-o-que-foi-praticado)
 - [📚 Aprendizados](#-aprendizados)
-- [📌 Conclusão](#-conclusão)
 
 ---
 
-## 📌  Sobre o Projeto
+# 📌  Sobre o Projeto
 
-Este projeto foi desenvolvido com o objetivo de aplicar conceitos fundamentais de Git e controle de versionamento, utilizando comandos essenciais e simulando situações reais do dia a dias de desenvolvimento.
+## 🧩 Contexto
 
-Foram abordadas práticas como criação de branches,  resolução de conflitos, versionamento de código e manipulação de histórico.)
+Este projeto simula um ambiente real de desenvolvimento, aplicando práticas utilizadas em times DevOps profissinais.
+
+O objetivo é consolidar conhecimento em versionamento e integração contínuna por meio de cenários praticos.
+
+---
+## 📂 Estrutura do Projeto
+
+```bash
+.
+├── .github/workflows/
+├── assets/
+├── README.md
+└── scripts/
+```
 
 ---
 
@@ -47,7 +64,7 @@ Foram abordadas práticas como criação de branches,  resolução de conflitos,
 Definição  das credenciais globais do Git
    
 ```bash
-git config --global user.name "Seu Nome"
+git config --global user.name "Rayane Santana"
 git config --global user.email "seu-email@exemplo.com"
 ```
 
@@ -79,14 +96,17 @@ vim README.md
 ```bash
 git add README.md
 ```
+
 ---
 
-```md
+
+
 ### 💾 Adicionando o primeiro commit
 
 ```bash
 git commit -m "feat: Inicialização do projeto Git com README estruturado"
 ```
+
 ---
 
 ### 📊 Verificando o status
@@ -104,7 +124,13 @@ git log
 
 ---
 
-## 🌿 Criando uma nova Branch
+## 🌿 Fluxo Git (BRANCH/ MERGE/ REBASE)
+
+## 🌿 Estratégia de Branches
+
+- main ➡️ código principal
+- feature/* ➡️ novas funcionalidades
+- fix/* ➡️ correções
 
 Criei uma nova branch para desenvolver uma feature isolada do código principal.
 
@@ -123,6 +149,8 @@ git push -u origin main
 ---
 
 # ⚠️ Resolvendo confitos de merge
+
+Este cenário simula conflitos reais comuns em equipes de desenvolvimentos
 
 ```bash
 git merge nova-branch
@@ -146,11 +174,7 @@ git push -u origin main
 ```
 ---
 
-```md id="d2k91x"
-
-## 🚀 Comandos utilizados
-
-```
+# 🚀 Comandos utilizados
 
 ### 🌿  Criando uma nova branch
 Criação de uma branch para desenvolvimento isolado
@@ -204,13 +228,13 @@ git checkout -b feature/rebase-teste
 
 ---
 
-```md
+# 🔄 CI/CD Pipeline
 
----
+## 🔄 Integrão Continuna
 
-## 🔄 Pipeline CI/CD
+Este projeto aplica conceitos de CI (Continuos Intengration), garantindo que cada alteração no código seja validada automaticamente.
 
-Este projeto utiliza GitHub Actions para automação de integração contínua.
+Isso reduz erros, melhora a qualidade de código e simula práticas reais de time DevOps.
 
 ### ✔️ O pipeline executa:
 
@@ -224,24 +248,39 @@ Este projeto utiliza GitHub Actions para automação de integração contínua.
 - Garantia de qualidade
 - Simulação de ambiente DevOps real
 
+## ⚙️ Detalhes do Pipeline 
+
+Arquivio: `.github/workflows/ci.yml`
+
+### Etapas:
+- Checkout do código
+- Validação do projeto
+- Execução de teste simulados
+- Verificação de integridade
+
+Pipeline executando automaticamente a cada push na branch 'main'.
+
 ### 📸 Execução do Pipeline
 ![Pipeline](./assets/pipeline.png)
 
+
 ---
 
-# 💡 Práticas Aplicadas:
-- 🌿 Criação de branches
-- ⚠️ Resolução de conflitos
-- 🔄 Versionamento de código
-- ♻️ Teste com reset e rebase
+# Como executar 
+
+```bash
+git clone https://github.com/SantRhay/Projeto-Git.git
+
+cd Projeto-Git
+```
  
 ## 🧠 Aprendizados Técnicos
 
-- Uso de branches para isolar funcionalidades
-- Resolução de conflitos de merde na prática
-- Controle de histórico com git (reset e restore)
-- Integração com repositório remoto (GitHub)
-```
+- Uso prático do Git no dia a dia
+- Criação e gerenciamento de branches
+- Resolução de conflitos de merge
+- Uso de git rebase
+- Automação com GitHub Actions
 
 ---
 
@@ -264,3 +303,5 @@ Simulei cenários reais de desenvolvimento, aplicando práticas utilizadas no me
 
 Feito por **Rayane Santana**
 💻 Em transição para área de tecnologia / DevOps
+
+LinkedIn: https://www.linkedin.com/in/rayane-santana-dev/
