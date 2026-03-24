@@ -260,10 +260,6 @@ Arquivio: `.github/workflows/ci.yml`
 
 Pipeline executando automaticamente a cada push na branch 'main'.
 
-### 📸 Execução do Pipeline
-![Pipeline](./assets/pipeline.png)
-
-
 ---
 
 # Como executar 
