@@ -37,3 +37,20 @@ jobs:
            
       - name: Final
         run: echo "Pipeline de CI concluída com sucesso!"
+
+      - name: Build Docker
+        run: |
+          echo "Construindo imagem Docker..."
+          docker build -t projeto-git -f docker/Dockerfile .
+      
+      - name: Run Docker Container
+        run: |
+          echo "Rodando container Docker..."
+          docker run -d -p 3000:3000 projeto-git
+
+      - name: Wait app
+        run: sleep 10 
+
+      - name: Testar aplicação
+        run: curl http://localhost:3000
+      
