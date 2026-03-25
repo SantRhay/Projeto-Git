@@ -2,9 +2,8 @@
 ![Languages](https://img.shields.io/github/languages/count/SantRhay/Projeto-Git)
 ![Repo Size](https://img.shields.io/github/repo-size/SantRhay/Projeto-Git)
 
-# 🚀 Projeto Git - Controle de Versionamento
-
-> 🚀 Projeto prático focado em simular cenários reais de versionamento utilizando Git e GitHub.
+# 🚀 Projeto Git + CI/CD + Docker
+>Simulaçao prática de um fluxo DevOps real, do commit ao deploy automatizado com CI/CD e Docker.
 
 ![Git](https://img.shields.io/badge/Git-Controle_de_Versão-orange)
 ![Status](https://img.shields.io/badge/status-concluído-brightgreen)
@@ -12,40 +11,20 @@
 ![CI](https://github.com/SantRhay/Projeto-Git/actions/workflows/ci.yml/badge.svg)
 
 
-## 🚀  Demonstração de Pipeline
 
-![CI/CD](./assets/pipeline.png)
+## 🚀 Sobre o projeto
 
+Este projeto documenta, de forma prática, minha evolução no uso de Git, GitHub, CI/CD com GitHub Actions e Docker, simulando um fluxo real de desenvolvimento utilizado em times de tecnologia.
 
-## 📌 Navegação
+## 🚀 Objetivo do Projeto
 
-- [📌 Sobre o projeto](#-sobre-o-projeto)
-- [🛠️ Ferramentas](#️-ferramentas-utilizadas)
-- [⚙️ Comandos](#️-comandos-utilizados)
-- [🔄 Pipeline CI/CD](#-pipeline-cicd)
-- [🧪 Prática](#-o-que-foi-praticado)
-- [📚 Aprendizados](#-aprendizados)
-
----
-
-# 📌  Sobre o Projeto
-
-## 🧩 Contexto
-
-Este projeto simula um ambiente real de desenvolvimento, aplicando práticas utilizadas em times DevOps profissinais.
-
-O objetivo é consolidar conhecimento em versionamento e integração contínuna por meio de cenários praticos.
-
----
-## 📂 Estrutura do Projeto
-
-```bash
-.
-├── .github/workflows/
-├── assets/
-├── README.md
-└── scripts/
-```
+Aplicar na prática:
+- Controle de versão com Git
+- Estratégias de branching (main, feature, fix)
+- Resolução de conflitos
+- Uso de rebase para histórico limpo
+- CI/CD com GitHub Actions
+- Containerização com Docker 
 
 ---
 
@@ -55,53 +34,60 @@ O objetivo é consolidar conhecimento em versionamento e integração contínuna
 - 🌿 Git (controle de versão)
 - 💻 GitHub (repositório remoto)
 - ⚙️ GitHub Actions (CI/CD)
+- 🐳 Docker (containerização)
+- 🚀  Node.js
 
 ---
+## 📁 Estrutura do projeto
 
-## ⚙️ Comando Utilizados
+```plaintext
+.
+├── app/
+│   ├── index.js
+│   └── package.json
+├── assets/
+│   ├── app.png
+│   └── pipeline.png
+├── docker/
+│   └── Dockerfile
+├── scripts/
+└── README.md
+```
 
-### 👤 Configurando o usuário  
+###  👤 Configurando do Git  
 Definição  das credenciais globais do Git
    
 ```bash
-git config --global user.name "Rayane Santana"
+git config --global user.name "Seu Nome"
 git config --global user.email "seu-email@exemplo.com"
 ```
 
 ---
 
-### 📁 Criando o repositório
+###  📁 Criando o repositório
 Criação de um novo repositório local
 
 ```bash
 mkdir meu-repo
 git init
 ```
-### 📄 Criando do arquivo README
+----
+###  📄 Criação do README
 Criação do arquivo principal do projeto
 
 ```bash 
 touch README.md
-```
-
-### ✏️ Editando o arquivo
-
-```bash
 vim README.md
 ``` 
 
-### ➕ Adicionando ao stage
-![Banner DevOps](https://img.shields.io/badge/Projeto-Git%20Versionamento-blue?style=for-the-badge)
-
+### ➕ Adicionando arquivo ao Git
 ```bash
 git add README.md
 ```
 
 ---
 
-
-
-### 💾 Adicionando o primeiro commit
+###  💾 Adicionando o primeiro commit
 
 ```bash
 git commit -m "feat: Inicialização do projeto Git com README estruturado"
@@ -109,89 +95,59 @@ git commit -m "feat: Inicialização do projeto Git com README estruturado"
 
 ---
 
-### 📊 Verificando o status
+### 🔍 Verificando o status e histórico
 
 ```bash
 git status
-``` 
----
-
-### 📜 Verifcando Histórico
-
-```bash
 git log 
 ```
 
 ---
 
-## 🌿 Fluxo Git (BRANCH/ MERGE/ REBASE)
-
-## 🌿 Estratégia de Branches
+## 🌿 Trabalhando com Branches
 
 - main ➡️ código principal
 - feature/* ➡️ novas funcionalidades
 - fix/* ➡️ correções
 
-Criei uma nova branch para desenvolver uma feature isolada do código principal.
-
-```bash
-git checkout -b nova-branch
-```
 ---
-
-# 🔗 Repositório Remoto do GitHub
-
-```bash
-git remote add origin https://github.com/SantRhay/Projeto-Git
-git branch -M main
-git push -u origin main
-``` 
----
-
-# ⚠️ Resolvendo confitos de merge
-
-Este cenário simula conflitos reais comuns em equipes de desenvolvimentos
-
-```bash
-git merge nova-branch
-```
----
-
-# 🔄 Teste de reset
-
-```bash
-git restore README.md
-git reset --hard HEAD~1
-``` 
----
-
-# 📦 Configurando .gitignore
-
-```bash
-touch .gitignore
-git add .gitignore
-git push -u origin main
-```
----
-
-# 🚀 Comandos utilizados
 
 ### 🌿  Criando uma nova branch
-Criação de uma branch para desenvolvimento isolado
+Criação de uma branch para desenvolvimento isolado.
 
 ```bash
 git checkout -b feature/login
 ```
 
+---
+
 ### 🔀 Merge
 Integração de alterações entre branches
 
 ```bash
-git merge nova-branch
+git merge feature/login
 ```
 
+---
+
+### ⚠️ Resolvendo confitos de Merge
+
+Este cenário simula conflitos reais comuns em equipes de desenvolvimento, demonstrando na prática como identificar e resolver conflitos durante o merge.
+
+```bash
+git merge nova-branch
+```
+após resolver conflito manualmente: 
+
+```bash
+git add .
+git commit
+```
+---
+
 ### 🔄 Rebase básico
-Reorganização do histórico de commits
+
+Reaplicando commits da branch atual sobre a brach main, mantendo um histórico linear.
 
 ```bash
 git checkout -b feature/rebase-teste
@@ -202,28 +158,39 @@ git rebase main
 
 ### 🐛 Correção de Bug
 
-Criando uma nova branch:  
+Utilizado para correções rápidas no projeto.
 
 ```bash
 git checkout -b fix:README
 ```
 ---
 
-### ⚠️ Simulação de conflito em merge
+### 🔄 Reset e Restore
 
-Criando a branch:
-  
+Aplicado para desfazer alterações e testar cenários.
+
 ```bash
-git checkout -b conflito-teste
+git restore README.md
+git reset --hard HEAD~1
+``` 
+
+---
+## 📦 Configurando .gitignore
+
+Utilizado para ignorar arquivos desnecessários no  versionamento, como dependência, arquivos temporários e credenciais.
+
+```bash
+touch .gitignore
+git add .gitignore
+git push -u origin main
 ```
 ---
-
-### 🌿 Criando um Rebase básico
-
-Criando a branch:
+### 🔗 Conectando ao GitHub
 
 ```bash
-git checkout -b feature/rebase-teste
+git remote add origin https://github.com/SantRhay/Projeto-Git
+git branch -M main
+git push -u origin main
 ``` 
 
 ---
@@ -241,12 +208,11 @@ Isso reduz erros, melhora a qualidade de código e simula práticas reais de tim
 - Validação automática do projeto
 - Simulação de testes
 - Verificação de arquivos essenciais
-- Execução a cada push na branch main
+- Build Docker
+- Execução do container
+- Teste via HTTP
 
-📌 Resultado:
-- Feedback imediato
-- Garantia de qualidade
-- Simulação de ambiente DevOps real
+📌 Executando a cada push na branch main
 
 ## ⚙️ Detalhes do Pipeline 
 
@@ -256,48 +222,157 @@ Arquivio: `.github/workflows/ci.yml`
 - Checkout do código
 - Validação do projeto
 - Execução de teste simulados
-- Verificação de integridade
-
-Pipeline executando automaticamente a cada push na branch 'main'.
+- Testes
+- Build da aplicação
+- Criação da imagem Docker
+- Execução do container
+- Teste de aplicação via curl
 
 ---
 
-# Como executar 
+ ## 🚀  Demonstração de Pipeline
+
+![CI/CD](./assets/pipeline.png)
+
+---
+
+## 🐳 Docker 
+
+### 📦 Containerização
+
+Este projeto utiliza Doker para gatantir um ambiente consistente de execução da aplicação.
+
+### 🧱 Dockerfile
+
+A aplicação é buildada utilizando um Dockerfile baseado em Node.js:
+
+```dockerfile
+FROM node:18
+
+WORKDIR /app
+
+COPY app/package*.json ./
+RUN npm install
+
+COPY app/ .
+
+EXPOSE 3000
+
+CMD ["node", "index.js"]
+```
+
+### ▶️ Build da imagem
 
 ```bash
-git clone https://github.com/SantRhay/Projeto-Git.git
-
-cd Projeto-Git
+docker build -t projeto-git -f docker/Dockerfile .
 ```
- 
+
+### 🚀 Execução do container
+
+```bash
+docker run -d -p --name app-docker 3000:3000 projeto-git
+```
+### 🧪 Teste automatizado
+
+Validação da aplicação após subir o container:
+
+```bash
+curl http://localhost:3000
+```
+
+### 🌐 Acessar Aplicação no navegador
+```bash
+http://localhost:3000
+```
+
+---
+
+
+## 🚀 Aplicação
+
+### 📌 Descrição
+
+Aplicação simples em node.js que simula um servidor HTTP executando dentro de um container Docker, permitindo validar o funcionamento da containerização na prática.
+
+---
+
+### ⚙️ Funcionamento
+
+- Cria um servidor HTTP
+- Escuta na porta 3000
+- Retorna uma mensagem simples no navegador
+
+---
+
+### 📄 Codigo principal
+
+```javascript
+const http = require ('http');
+
+const server = http.createServer ((req, res) => {
+    res.end('App rodando no Docker!');
+});
+
+server.listen (3000, () => {
+    console.log ('Servidor rodando na porta 3000');
+});
+```
+
+## Evidência de Execução
+
+### 🌐 Aplicação rodando
+
+A aplicação foi executada com sucesso dentro de um container Docker.
+
+![app](./assets/app.png)
+
+### ⚙️ Container em execução
+
+Verificando containers ativos:
+
+```bash
+docker ps
+```
+
+---
+
+```md
+# 📊 Resultados
+
+- Fluxo completo com Git aplicado
+- Integração com GitHub
+- Pipelice CI/CD funcional
+- Containerização com Docker
+- Simulação de ambiente real desenvolvimento
+```
+
+
+
 ## 🧠 Aprendizados Técnicos
+
+Durante este projeto, desenvolvi conhecimentos práticos em:
 
 - Uso prático do Git no dia a dia
 - Criação e gerenciamento de branches
 - Resolução de conflitos de merge
 - Uso de git rebase
 - Automação com GitHub Actions
+- Containerização com Docker
 
 ---
 
 ## 📌 Conclusão
 
-Este projeto foi essencial para consolidar meus conhecimentos em Git e controle de versionamento, permitindo aplicar na prática conceitos como criação de branches, resolução de conflitos e gerenciamento de histórico;
+Este projeto demonstra, na prática, a aplicação de conceitos fundamentais de DevOps, incluindo versionamento, automação e containerização.
 
-Simulei cenários reais de desenvolvimento, aplicando práticas utilizadas no mercado e fortalecendo minha base em versionamento e CI/CD
+A estrutura simula um fluxo real de desenvolvimento utilizado em ambientes profissionais.
 
 ---
 
-## 📊 Resultados
-
-- Pipeline CI/CD funcional com GitHub Actions
-- Automatização de validações a cada push
-- Simulação de fluxo real de desenvoltimento
-- Aplicação de boas práticas de versionamento
-
 ## 👤 Autora
 
-Feito por **Rayane Santana**
-💻 Em transição para área de tecnologia / DevOps
+**Rayane Santana**
 
-LinkedIn: https://www.linkedin.com/in/rayane-santana-dev/
+🚀 Em transição para área de tecnologia | DevOps
+
+🔗 LinkedIn: https://www.linkedin.com/in/rayane-santana-dev/
